@@ -1,0 +1,17 @@
+services:
+  forward-ajm3-bot:
+    build: .
+    environment:
+      ADMINS: 567835245
+      API_ID: 7628928
+      API_HASH: 90a82f85b152b1928f1e81c1cd4a7635
+      BOT_TOKEN: $BOT_TOKEN
+      COLLECTION_NAME: kcforv3
+      LOG_CHANNEL: -1001382755710
+      DATABASE_NAME: Cluster0
+      DATABASE_URI: mongodb+srv://kcforward:kcforward@cluster0.vstat.mongodb.net/?retryWrites=true&w=majority
+      TARGET_CHANNEL: $TARGET_CHANNEL
+      BOT_USERNAME: $BOT_USERNAME
+    resources:
+      cpu: 1000m
+      memory: 3Gi
